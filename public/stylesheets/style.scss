@@ -1,0 +1,68 @@
+@import 'vendor/normalize.scss';
+$green: #28AF7D;
+$light: #EEE; 
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+}
+
+.bod {
+	background-color: #333;
+}
+
+#draghere{
+  width:300px;
+  height:100px;
+  background-color:rgba(221,214,155,0.4);
+  border:1px dashed black;
+  text-align:center;
+}
+
+.dropzone {
+	height: 60vh;
+	cursor: pointer;
+	overflow: scroll;
+	text-align: center;
+	padding: 20px 10px;
+	width: 80%;
+	margin: 30px auto 0;
+	border: none;
+	border-radius: 2px;
+	background-color: #FFF;
+}
+.loginForm {
+	width: 80%;
+	height: 120px;
+	margin: 30px auto 0px;
+	display: flex;
+	flex-direction: column;
+	.inputs {
+		width: 50%;
+		margin: 0 auto;
+		height: 30px;
+		margin-top: 5px;
+		&.btn {
+			box-shadow: none;
+			outline: none;
+			border: none;
+			background-color: $green;
+			color: $light;
+			font-weight: 700;
+			letter-spacing: 0.03em;
+		}
+	}
+}
+
+.upload {
+	height: 50vh;
+	width: 80%;
+	border: 1px solid black;
+	margin: 50px auto 0px;
+	border-radius: 2px;
+	padding: 10px;
+	overflow: scroll;
+}
+
+.dz-message {
+	color: rgba(0,0,0,0.3);
+}
